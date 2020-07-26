@@ -57,10 +57,29 @@ Restaurant and delivery boy has predefined data in it
     }
 ]
 
-GET Restaurant data - curl --location --request GET 'localhost:8080/restaurant'
-POST Order - curl --location --request POST 'localhost:8080/order?itemId=4&noOfItems=4'
-GET Order Status - curl --location --request GET 'localhost:8080/orderStatus?orderId=3'
-POST Change Order Status - curl --location --request POST 'localhost:8080/order/deliveryStatus?orderId=3&status=PENDING'
-GET all Active delivery boy - curl --location --request GET 'localhost:8080/activeDeliveryBoy'
-POST add delivery boy to order - curl --location --request POST 'localhost:8080/deliveryBoy/order?deliveryPersonId=1&orderId=3'
-GET delivery boy status - curl --location --request GET 'localhost:8080/deliveryBoy/status?deliveryPersonId=1'
+#GET Restaurant data - 
+curl --location --request GET 'localhost:8080/restaurant'
+
+
+#POST Order - 
+curl --location --request POST 'localhost:8080/order?itemId=4&noOfItems=4'
+
+
+#GET Order Status - 
+curl --location --request GET 'localhost:8080/orderStatus?orderId=3'
+
+
+#POST Change Order Status - 
+curl --location --request POST 'localhost:8080/order/deliveryStatus?orderId=3&status=PENDING'
+
+
+#GET all Active delivery boy - 
+curl --location --request GET 'localhost:8080/activeDeliveryBoy'
+
+
+#POST add delivery boy to order - 
+curl --location --request POST 'localhost:8080/deliveryBoy/order?deliveryPersonId=1&orderId=3'
+
+
+#GET delivery boy status - 
+curl --location --request GET 'localhost:8080/deliveryBoy/status?deliveryPersonId=1'
